@@ -41,6 +41,10 @@ body {
     
 }
 
+.square-resultado {
+    width: 225px;
+}
+
 .buttom {
     border: none;
     transition: transform 300ms, background-color 300ms;
