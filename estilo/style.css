@@ -103,6 +103,17 @@ i {
     transition: all .3s ease;
 }
 
+i img{
+    width: 50px;
+}
+
+i img:hover{
+    
+    transition: 1s;
+
+    width: 75px;
+}
+
 .botao {
 
     display: flex;
