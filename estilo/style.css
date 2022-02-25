@@ -261,4 +261,9 @@ span {
         height: 50px;
         line-height: 50px;
     }
+    
+    .square-resultado{
+        width: 125px;
+    }
+    
 }
