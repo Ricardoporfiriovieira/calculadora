@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main {
+    display: inline-block;
+    background-color: rgb(42, 42, 42);
+    padding: 20px;
+    margin: auto;
+    box-shadow: rgb(56 239 125 / 40%) -5px 5px, 
+    rgb(0 218 139 / 30%) -10px 10px, 
+    rgb(0 197 147 / 20%) -15px 15px, 
+    rgb(0 175 148 / 10%) -20px 20px, 
+    rgb(17 153 142 / 5%) -25px 25px;
+    border-radius: 20px;
+}
+
+
+.square {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 2px rgb(56 239 125 / 60%);
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+.square-resultado {
+    width: 225px;
+}
+
+.buttom {
+    border: none;
+    transition: transform 300ms, background-color 300ms;
+    animation: pulse 500ms;
+    background-color: whitesmoke;
+}
+
+.buttom:hover{
+    transform: scale(1.05);
+    background-color: rgba(2, 110, 38, 0.74);
+    color: aliceblue;
+    box-shadow: -5px 5px 2px rgb(55, 255, 132);
+}
+
+.buttom:active{
+    transform: scale(0.90);
+    animation: none;
+}
+
+h1 {
+    color: white;
+}
+
+.tela {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    max-width: 500px;
+    overflow: auto;
+    height: 100px;
+    background-color: rgba(139, 223, 167, 0.863);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    opacity: 0;
+
+    font-size: 20px;
+
+    color: white;
+
+    transition: all .3s ease;
+}
+
+i img{
+    width: 50px;
+}
+
+i img:hover{
+    
+    transition: 1s;
+
+    width: 65px;
+}
+
+
+@media screen and (max-width: 700px){
+
+    .square{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    
+    .square-resultado{
+        width: 125px;
+    }
+    .container{
+        height: 87vh;   
+        margin-top: -20px;
+    }
+    
+}
